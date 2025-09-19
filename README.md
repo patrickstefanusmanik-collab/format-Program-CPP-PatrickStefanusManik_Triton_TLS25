@@ -1,3 +1,4 @@
+```LostAndFound.cpp 
 #include <iostream>
 using namespace std;
 
@@ -43,3 +44,26 @@ int main() {
 
     return 0;
 }
+
+```
+```StrangeTrafficLights.cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Array nama lampu (index 0 hijau, 1 kuning, 2 merah)
+    string lampu[3] = {"Hijau", "Kuning", "Merah"};
+
+    int totalWaktu;
+    cout << "Masukkan total waktu (detik): ";
+    cin >> totalWaktu;
+
+    // Loop tiap detik
+    for (int t = 0; t < totalWaktu; t++) {
+        cout << "Detik " << t << ": " << lampu[t % 3] << endl;
+    }
+
+    return 0;
+}
+
+```
